@@ -1,0 +1,339 @@
+body {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.socials a:hover {
+    color: #fff;
+}
+
+.buyBtn a:hover {
+    color: #fff;
+}
+
+.fullscreen {
+    position: fixed;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.socials {
+    display: flex;
+    gap: 75px;
+    font-size: 15px;
+    font-family: 'Zen Dots', cursive;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-video {
+    z-index: -1;
+}
+
+h1 {
+    margin: 0;
+}
+
+#logo {
+    position: fixed;
+    margin-left: 100px;
+    margin-top: 30;
+    z-index: 1;
+}
+
+.backBtn {
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    z-index: 1;
+    font-family: 'Jura', sans-serif;
+    font-size: 12px;
+}
+
+.cart {
+    position: fixed;
+    top: 50px;
+    right: 100px;
+    z-index: 1;
+    font-family: 'Jura', sans-serif;
+    font-size: 12px;
+}
+
+::selection {
+    background: #ffffff; /* Цвет фона */
+    color: rgb(0, 0, 0); /* Цвет текста */
+}
+
+.foot {
+    bottom: 30px;
+    font-size: 10px;
+    z-index: 1;
+    font-family: 'Jura', sans-serif;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    width: 50px;
+}
+
+.bg {
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.664);
+}
+
+audio {
+    z-index: 2;
+}
+
+#overlay-toggle:checked ~ .overlay {
+    animation-fill-mode: forwards;
+    animation-name: fade, hide;
+    animation-delay: 0.7s, 3000ms;
+    animation-duration: 5000ms, 1ms;
+}
+
+#overlay-toggle:checked ~ .overlay label {
+    animation-fill-mode: forwards;
+    animation-name: fade;
+    animation-delay: 1s;
+    animation-duration: 1000ms;
+}
+
+@media(hover: hover) {
+    .hover {
+      display: block;
+    }
+    .no-hover {
+      display: none;
+    }
+}
+
+@keyframes fade{
+    to {
+      opacity: 0;
+    }
+}
+@keyframes hide {
+    to {
+      visibility: hidden;
+    }
+}
+
+.no-hover {
+    display: block;
+}
+
+.hover {
+    display: none;
+}
+
+.overlay {
+    z-index: 1;
+    background-color: black;
+}
+
+.overlay label {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vw;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+#overlay-toggle {
+    position:absolute;
+    display: none;
+}
+
+#beforeClickText {
+    font-family: 'Jura', sans-serif;
+    font-size: 15px;
+}
+
+#beforeClickLogo {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#beforeClickLogo:hover {
+    opacity: 0.8;
+    transition: 1s ease-out;
+    -webkit-transition: 1s;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.merch {
+    display: flex;
+    gap: 75px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.merchItem {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: 'Jura', sans-serif;
+}
+
+/* .merchInfo {
+    border: #fff solid 1px;
+    background-color: rgba(83, 83, 83, 0.5);
+    padding: 5px 5px;
+    width: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+} */
+
+.merchSize {
+    border: rgb(95, 95, 95) solid 1px;
+    background-color: rgb(169, 169, 169);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 5px 0px;
+    width: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.buyBtn {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+a.rollover {
+    display: block;
+    image-resolution: 500px;
+    background: url(../img/merch/BlackHoodie.webp);
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+}
+
+a.rollover:hover {
+    display: block;
+    image-resolution: 500px;
+    background: url(../img/merch/HoodieBack.svg);
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+    transition: 0.2s;
+}
+
+a.rollover2 {
+    display: block;
+    image-resolution: 500px;
+    background: url(../img/merch/BlueHoodie.webp);
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+}
+
+a.rollover2:hover {
+    display: block;
+    image-resolution: 500px;
+    background: url(../img/merch/BlueHoodieBack.svg);
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+    transition: 0.2s;
+}
+
+a.rollover3 {
+    display: block;
+    image-resolution: 500px;
+    background: url(../img/merch/BlackLong.webp);
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+}
+
+a.rollover3:hover {
+    display: block;
+    image-resolution: 500px;
+    background: url(../img/merch/BlackLongBack.svg);
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+    transition: 0.2s;
+}
+
+.merchDiscriptionBestseller {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 5px;
+    max-width: 250px;
+    min-width: 200px;
+    align-items: center;
+    border: 1px solid #fff;
+    background-color: rgb(34, 34, 34);
+}
+
+.merchDiscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 5px;
+    max-width: 250px;
+    min-width: 200px;
+    align-items: center;
+    border: 1px solid #fff;
+    background-color: rgb(68, 68, 68);
+}
+
+.merchDiscription:hover {
+    border: 1px solid rgb(51, 51, 51);
+    transition: 0.2s;
+}
+
+.merchDiscriptionBestseller:hover {
+    border: 1px solid rgb(82, 82, 82);
+    transition: 0.2s;
+}

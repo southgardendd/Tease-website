@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch ϟ Southgarden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="backBtn">
+            <a href="../index.html">< BACK</a>
+        </div>
+        <div class="cart">
+            <a href="#">CART ( 0 )</a>
+        </div>
+    </header>
+    <p class="foot">
+        2012-2022
+    </p>
+
+    <div class="bg">
+        <!-- DARK VIDEO OVERLAY -->
+    </div>
+    <main>
+        <video muted="muted" loop playsinline="" preload="auto" class="fullscreen bg-video" id="video" autoplay>
+            <source src="./img/video/merch background.webm" type="video/webm">
+            <!-- <source src="./img/video/vhsgarden.mp4" type="video/mp4"> -->
+        </video>
+
+        <section class="fullscreen text-content">
+            <div class="merch">
+                <div class="merchItem">
+                    <a href="#" class="rollover" title="Looks good?"></a>
+                    <div class="merchDiscriptionBestseller">
+                        <div class="itemName">
+                            <p>
+                                ZIP UP HOODIE - $55
+                            </p>
+                        </div>
+                        <div class="merchSize">
+                            <p>M | L | XL</p>
+                        </div>
+                        <div class="buyBtn">
+                            <a href="./buy-now.html">Buy Now</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="merchItem">
+                    <a href="#" class="rollover2" title="My fav color"></a>
+                    <div class="merchDiscription">
+                        <div class="itemName">
+                            <p>
+                                PASTEL BLUE HOODIE - $55
+                            </p>
+                        </div>
+                        <div class="merchSize">
+                            <p>M | L | XL</p>
+                        </div>
+                        <div class="buyBtn">
+                            <a href="./buy-now.html">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="merchItem">
+                    <a href="#" class="rollover3" title="Dont like hoods?"></a>
+                    <div class="merchDiscription">
+                        <div class="itemName"> 
+                            <p>
+                                BLACK LONG SLEEVE - $55
+                            </p>
+                        </div>
+                        <div class="merchSize">
+                            <p>M | L | XL</p>
+                        </div>
+                        <div class="buyBtn">
+                            <a href="./buy-now.html">Buy Now</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+    </section>
+    </main>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+        })
+          
+        document.onkeypress = function (event) {  
+        event = (event || window.event);  
+        if (event.keyCode == 123) {  
+        return false;  
+        }  
+              if(event.ctrlKey && event.shiftKey && event.keyCode == 'I'.charCodeAt(0)) {
+             return false;
+          }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'C'.charCodeAt(0)) {
+             return false;
+            }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'J'.charCodeAt(0)) {
+             return false;
+        }  
+        }
+        document.onmousedown = function (event) {  
+        event = (event || window.event);  
+        if (event.keyCode == 123) {  
+        return false;  
+        }  
+              if(event.ctrlKey && event.shiftKey && event.keyCode == 'I'.charCodeAt(0)) {
+             return false;
+          }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'C'.charCodeAt(0)) {
+             return false;
+            }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'J'.charCodeAt(0)) {
+             return false;
+        }  
+        }
+        document.onkeydown = function (event) {  
+        event = (event || window.event);  
+        if (event.keyCode == 123) {  
+        return false;  
+        }  
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'I'.charCodeAt(0)) {
+             return false;
+          }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'C'.charCodeAt(0)) {
+             return false;
+            }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'J'.charCodeAt(0)) {
+             return false;
+        }  
+        }
+        </script> 
+        <script>
+            function audioPlay() {
+                var audio = document.getElementById("audio");
+                audio.volume = 0.4;
+                audio.play()
+            }
+
+            function videoPlay() {
+                var video = document.getElementById("video");
+                video.play()
+            }
+        </script>
+</body>
+</html>

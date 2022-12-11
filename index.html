@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home ϟ Southgarden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./img/logo.png" width="150px" alt="Southgarden" id="logo" class="noselect" title="Southgarden Logo"></a>
+    </header>
+    <p class="foot">
+        2012-2022
+    </p>
+
+    <div class="bg">
+        <!-- DARK VIDEO OVERLAY -->
+    </div>
+    <main>
+        <input type="checkbox" autocomplete="off" id="overlay-toggle">
+        <div class="overlay fullscreen">
+            <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+                    <span class="no-hover" style="font-family: mono; font-size: 0.6em;">?</span>
+                    <span class="hover" style="font-family: mono; font-size: 0.6em;">?</span>
+                    <!-- <img src="./img/logo.png" alt="Southgarden" id="beforeClickLogo" width="200px" class="noselect"> -->
+                    <p id="beforeClickText">CLICK TO ENTER</p>
+                </label>
+        </div>
+
+        <audio loop="" preload="auto" id="audio">
+                <source src="./img/drip.mp3" type="audio/mp3"></source>
+        </audio>
+
+        <video muted="muted" loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
+            <source src="https://cdn.discordapp.com/attachments/1037054140909637684/1039286582039040080/background.mp4" type="video/mp4">
+            <!-- <source src="./img/video/merch background.webm" type="video/webm"> -->
+        </video>
+
+        <section class="fullscreen text-content">
+            <!-- <h1 style="font-family: 'Zen Dots', cursive; text-shadow: 0 0 0.40em #bababa; color: #ffff">ϟ</h1> -->
+            <!-- <p style="font-family: 'Zen Dots', cursive; text-shadow: 0 0 0.40em #bababa; font-size: 20px;">Be in touch!</p> -->
+            <!-- <p>--------------</p> -->
+            <div class="socials">
+                <a href="https://open.spotify.com/artist/0FSQsWCPZhwrjFHewRicQ8?si=ig9eCwh8Rq-Di4fKZ0V2Yg" target="_blank" style="font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;" class="linkBtn" title="Listen my music">My Spotify</a>
+                <a href="./buy-music.html" style="font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;" class="linkBtn" title=";)">Buy Music</a>
+                <a href="./about-me.html" style="font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;" class="linkBtn" title="What do you want to know?">About Me</a>
+                <a href="./merch.html" style="font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;" class="linkBtn" title="Some cool stuff">Merch</a>
+            </div>
+    </section>
+    </main>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+        })
+          
+        document.onkeypress = function (event) {  
+        event = (event || window.event);  
+        if (event.keyCode == 123) {  
+        return false;  
+        }  
+              if(event.ctrlKey && event.shiftKey && event.keyCode == 'I'.charCodeAt(0)) {
+             return false;
+          }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'C'.charCodeAt(0)) {
+             return false;
+            }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'J'.charCodeAt(0)) {
+             return false;
+        }  
+        }
+        document.onmousedown = function (event) {  
+        event = (event || window.event);  
+        if (event.keyCode == 123) {  
+        return false;  
+        }  
+              if(event.ctrlKey && event.shiftKey && event.keyCode == 'I'.charCodeAt(0)) {
+             return false;
+          }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'C'.charCodeAt(0)) {
+             return false;
+            }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'J'.charCodeAt(0)) {
+             return false;
+        }  
+        }
+        document.onkeydown = function (event) {  
+        event = (event || window.event);  
+        if (event.keyCode == 123) {  
+        return false;  
+        }  
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'I'.charCodeAt(0)) {
+             return false;
+          }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'C'.charCodeAt(0)) {
+             return false;
+            }
+            if(event.ctrlKey && event.shiftKey && event.keyCode == 'J'.charCodeAt(0)) {
+             return false;
+        }  
+        }
+        </script> 
+        <script>
+            function audioPlay() {
+                var audio = document.getElementById("audio");
+                audio.volume = 0.1;
+                audio.play()
+            }
+
+            function videoPlay() {
+                var video = document.getElementById("video");
+                video.play()
+            }
+        </script>
+</body>
+</html>
